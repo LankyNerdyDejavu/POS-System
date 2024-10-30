@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS Billing Section</title>
+    <link rel="stylesheet" href="Billing Section.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <button onclick="openInventoryModal()">Inventory</button>
+        <div class="search-bar">
+            <input type="text" id="searchBar" onkeyup="filterMenu()" placeholder="Search...">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="menu-section">
+            <div class="menu-item">
+                <h3>Vanilla<br>Ice-Cream</h3>
+                <span><b style="color: green;">$50</b></span>
+                <img src="Vanilla.png" alt="Vanilla">
+            </div>
+            <div class="menu-item">
+                <h3>Strawberry<br>Ice-Cream</h3>
+                <span><b style="color: green;">$50</b></span>
+                <img src="Strawberry.png" alt="Strawberry">
+            </div>
+            <div class="menu-item">
+                <h3>Blueberry<br>Ice-Cream</h3>
+                <span><b style="color: green;">$100</b></span>
+                <img src="Blueberry.png" alt="Blueberry">
+            </div>
+            <div class="menu-item">
+                <h3>Ube<br>Ice-Cream</h3>
+                <span><b style="color: green;">$50</b></span>
+                <img src="Ube.png" alt="Ube">
+            </div>
+            <div class="menu-item">
+                <h3>Cheese<br>Ice-Cream</h3>
+                <span><b style="color: green;">$50</b></span>
+                <img src="Cheese.png" alt="Cheese">
+            </div>
+            <div class="menu-item">
+                <h3>Avocado<br>Ice-Cream</h3>
+                <span><b style="color: green;">$60</b></span>
+                <img src="Avocado.png" alt="Avocado">
+            </div>
+            <div class="menu-item">
+                <h3>Mango<br>Ice-Cream</h3>
+                <span><b style="color: green;">$50</b></span>
+                <img src="Mango.png" alt="Mango">
+            </div>
+            <div class="menu-item">
+                <h3>Chocolate<br>Ice-Cream</h3>
+                <span><b style="color: green;">$50</b></span>
+                <img src="Chocolate.png" alt="Chocolate">
+            </div>
+            <div class="menu-item">
+                <h3>Pistachio<br>Ice-Cream</h3>
+                <span><b style="color: green;">$140</b></span>
+                <img src="Pistachio.png" alt="Pistachio">
+            </div>
+            <div class="menu-item">
+                <h3>Matcha<br>Ice-Cream</h3>
+                <span><b style="color: green;">$140</b></span>
+                <img src="Matcha.png" alt="Matcha">
+            </div>
+            <div class="menu-item">
+                <h3>Rainbow<br>Ice-Cream</h3>
+                <span><b style="color: green;">$180</b></span>
+                <img src="Rainbow.png" alt="Rainbow">
+            </div>
+            <div class="menu-item">
+                <h3>Tiramisu<br>Ice-Cream</h3>
+                <span><b style="color: green;">$140</b></span>
+                <img src="Tiramisu.png" alt="Tiramisu">
+            </div>
+            <div class="menu-item">
+                <h3>Choco Vanilla<br>Ice-Cream</h3>
+                <span><b style="color: green;">$100</b></span>
+                <img src="Choco Vanilla.png" alt="Choco Vanilla">
+            </div>
+            <div class="menu-item">
+                <h3>Chocolate Chip<br>Ice-Cream</h3>
+                <span><b style="color: green;">$100</b></span>
+                <img src="Chocolate Chip.png" alt="Chocolate Chip">
+            </div>
+            <div class="menu-item">
+                <h3>Dark Chocolate<br>Ice-Cream</h3>
+                <span><b style="color: green;">$75</b></span>
+                <img src="Dark Chocolate.png" alt="Dark Chocolate">
+            </div>
+            <div class="menu-item">
+                <h3>Mint Chocolate<br>Ice-Cream</h3>
+                <span><b style="color: green;">$140</b></span>
+                <img src="Mint Chocolate.png" alt="Mint Chocolate">
+            </div>
+            <div class="menu-item">
+                <h3>SB Lemonade<br>Ice-Cream</h3>
+                <span><b style="color: green;">$160</b></span>
+                <img src="Strawberry Lemonade.png" alt="Strawberry Lemonade">
+            </div>
+            <div class="menu-item">
+                <h3>SB Vanilla<br>Ice-Cream</h3>
+                <span><b style="color: green;">$160</b></span>
+                <img src="Strawberry Vanilla.png" alt="Strawberry Vanilla">
+            </div>
+            <div class="menu-item">
+                <h3>Salted Caramel<br>Ice-Cream</h3>
+                <span><b style="color: green;">$140</b></span>
+                <img src="Salted Caramel.png" alt="Salted Caramel">
+            </div>
+            <div class="menu-item">
+                <h3>Rocky Road<br>Ice-Cream</h3>
+                <span><b style="color: green;">$100</b></span>
+                <img src="Rocky Road.png" alt="Rocky Road">
+            </div>
+            <div class="menu-item">
+                <h3>CNC<br>Ice-Cream</h3>
+                <span><b style="color: green;">$100</b></span>
+                <img src="Cookies N Cream.png" alt="Cookies N Cream">
+            </div>
+            <div class="menu-item">
+                <h3>Moose Tracks<br>Ice-Cream</h3>
+                <span><b style="color: green;">$180</b></span>
+                <img src="Moose Tracks.png" alt="Moose Tracks">
+            </div>
+            <div class="menu-item">
+                <h3>Pink Bubblegum<br>Ice-Cream</h3>
+                <span><b style="color: green;">$160</b></span>
+                <img src="Pink Bubblegum.png" alt="Pink Bubblegum">
+            </div>
+            <div class="menu-item">
+                <h3>Blueberry SC<br>Ice-Cream</h3>
+                <span><b style="color: green;">$140</b></span>
+                <img src="Blueberry Shortcake.png" alt="Blueberry Shortcake">
+            </div>
+            <div class="menu-item">
+                <h3>Cotton Candy<br>Ice-Cream</h3>
+                <span><b style="color: green;">$180</b></span>
+                <img src="Cotton Candy.png" alt="Cotton Candy">
+            </div>
+        </div>
+
+        <div class="billing-section" id="billingSection">
+            <h2>Chamber Ice-Cream</h2>
+            <div id="billingItems"></div>
+            <h3 id="totalAmount">Total: $0.00</h3>
+            <button class="charge-button">Charge</button>
+        </div>
+    </div>
+
+<div id="chargeModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h2>Payment</h2>
+
+        <label for="paymentMethod">Payment Method:</label>
+        <select id="paymentMethod">
+            <option value="Cash">Cash</option>
+            <option value="Card">Card</option>
+            <option value="GCash">GCash</option>
+            <option value="Paymaya">Paymaya</option>
+            <option value="BPI">BPI</option>
+        </select>
+        <br>
+        <br>
+        <label for="amountGiven">Amount Given:</label>
+        <input type="number" id="amountGiven" placeholder="Enter amount" />
+
+        <h3 id="changeAmount">Change: $0.00</h3>
+        
+        <button class="print-button" onclick="printReceipt()">Print Receipt</button>
+    </div>
+</div>
+
+<div id="inventoryModal" class="modal">
+    <div class="inventory-modal-content">
+        <span class="close-btn" onclick="closeInventoryModal()">&times;</span>
+        <h2>Inventory Management</h2>
+
+        <div class="inventory-grid">
+            <div class="inventory-item">
+                <h3>Vanilla</h3>
+                <img src="Vanilla.png" alt="Vanilla Ice-Cream">
+                <p>Stock: <span id="stockVanilla">100</span></p>
+                <input type="number" id="restockVanilla" min="1" placeholder="Enter quantity">
+                <button onclick="restockItem('Vanilla', 'stockVanilla')">Restock</button>
+            </div>
+            <div class="inventory-item">
+                <h3>Strawberry</h3>
+                <img src="Strawberry.png" alt="Strawberry Ice-Cream">
+                <p>Stock: <span id="stockStrawberry">100</span></p>
+                <input type="number" id="restockStrawberry" min="1" placeholder="Enter quantity">
+                <button onclick="restockItem('Strawberry', 'stockStrawberry')">Restock</button>
+            </div>
+            <div class="inventory-item">
+                <h3>Blueberry</h3>
+                <img src="Blueberry.png" alt="Blueberry Ice-Cream">
+                <p>Stock: <span id="stockBlueberry">100</span></p>
+                <input type="number" id="restockBlueberry" min="1" placeholder="Enter quantity">
+                <button onclick="restockItem('Blueberry', 'stockBlueberry')">Restock</button>
+            </div>
+            <div class="inventory-item">
+                <h3>Ube</h3>
+                <img src="Ube.png" alt="Ube Ice-Cream">
+                <p>Stock: <span id="stockUbe">100</span></p>
+                <input type="number" id="restockUbe" min="1" placeholder="Enter quantity">
+                <button onclick="restockItem('Ube', 'stockUbe')">Restock</button>
+            </div>
+            <div class="inventory-item">
+                <h3>Cheese</h3>
+                <img src="Cheese.png" alt="Cheese Ice-Cream">
+                <p>Stock: <span id="stockCheese">100</span></p>
+                <input type="number" id="restockCheese" min="1" placeholder="Enter quantity">
+                <button onclick="restockItem('Cheese', 'stockCheese')">Restock</button>
+            </div>
+            <div class="inventory-item">
+                <h3>Avocado</h3>
+                <img src="Avocado.png" alt="Avocado Ice-Cream">
+                <p>Stock: <span id="stockAvocado">100</span></p>
+                <input type="number" id="restockAvocado" min="1" placeholder="Enter quantity">
+                <button onclick="restockItem('Avocado', 'stockAvocado')">Restock</button>
+            </div>
+            <div class="inventory-item">
+                <h3>Mango</h3>
+                <img src="Mango.png" alt="Mango Ice-Cream">
+                <p>Stock: <span id="stockMango">100</span></p>
+                <input type="number" id="restockMango" min="1" placeholder="Enter quantity">
+                <button onclick="restockItem('Mango', 'stockMango')">Restock</button>
+            </div>
+            <div class="inventory-item">
+                <h3>Chocolate</h3>
+                <img src="Chocolate.png" alt="Chocolate Ice-Cream">
+                <p>Stock: <span id="stockChocolate">100</span></p>
+                <input type="number" id="restockChocolate" min="1" placeholder="Enter quantity">
+                <button onclick="restockItem('Chocolate', 'stockChocolate')">Restock</button>
+            </div>
+            <div class="inventory-item">
+                <h3>Pistachio</h3>
+                <img src="Pistachio.png" alt="Pistachio Ice-Cream">
+                <p>Stock: <span id="stockPistachio">100</span></p>
+                <input type="number" id="restockPistachio" min="1" placeholder="Enter quantity">
+                <button onclick="restockItem('Pistachio', 'stockPistachio')">Restock</button>
+            </div>
+            <div class="inventory-item">
+                <h3>Matcha</h3>
+                <img src="Matcha.png" alt="Matcha Ice-Cream">
+                <p>Stock: <span id="stockMatcha">100</span></p>
+                <input type="number" id="restockMatcha" min="1" placeholder="Enter quantity">
+                <button onclick="restockItem('Matcha', 'stockMatcha')">Restock</button>
+            </div>
+            <div class="inventory-item">
+                <h3>Rainbow</h3>
+                <img src="Rainbow.png" alt="Rainbow Ice-Cream">
+                <p>Stock: <span id="stockRainbow">100</span></p>
+                <input type="number" id="restockRainbow" min="1" placeholder="Enter quantity">
+                <button onclick="restockItem('Rainbow', 'stockRainbow')">Restock</button>
+            </div>
+            <div class="inventory-item">
+                <h3>Tiramisu</h3>
+                <img src="Tiramisu.png" alt="Tiramisu Ice-Cream">
+                <p>Stock: <span id="stockTiramisu">100</span></p>
+                <input type="number" id="restockTiramisu" min="1" placeholder="Enter quantity">
+                <button onclick="restockItem('Tiramisu', 'stockTiramisu')">Restock</button>
+            </div>
+            <div class="inventory-item">
+                <h3>Choco VN</h3>
+                <img src="Choco Vanilla.png" alt="Choco Vanilla Ice-Cream">
+                <p>Stock: <span id="stockChoco Vanilla">100</span></p>
+                <input type="number" id="restockChoco Vanilla" min="1" placeholder="Enter quantity">
+                <button onclick="restockItem('Choco Vanilla', 'stockChoco Vanilla')">Restock</button>
+            </div>
+            <div class="inventory-item">
+                <h3>Choco Chip</h3>
+                <img src="Chocolate Chip.png" alt="Choco Chip Ice-Cream">
+                <p>Stock: <span id="stockChoco Chip">100</span></p>
+                <input type="number" id="restockChoco Chip" min="1" placeholder="Enter quantity">
+                <button onclick="restockItem('Choco Chip', 'stockChoco Chip')">Restock</button>
+            </div>
+            <div class="inventory-item">
+                <h3>Dark Choco</h3>
+                <img src="Dark Chocolate.png" alt="Dark Choco Ice-Cream">
+                <p>Stock: <span id="stockDark Choco">100</span></p>
+                <input type="number" id="restockDark Choco" min="1" placeholder="Enter quantity">
+                <button onclick="restockItem('Dark Choco', 'stockDark Choco')">Restock</button>
+            </div>
+            <div class="inventory-item">
+                <h3>Mint Choco</h3>
+                <img src="Mint Chocolate.png" alt="Mint Choco Ice-Cream">
+                <p>Stock: <span id="stockMint Choco">100</span></p>
+                <input type="number" id="restockMint Choco" min="1" placeholder="Enter quantity">
+                <button onclick="restockItem('Mint Choco', 'stockMint Choco')">Restock</button>
+            </div>
+            <div class="inventory-item">
+                <h3>SB LMND</h3>
+                <img src="Strawberry Lemonade.png" alt="Strawberry Lemonade Ice-Cream">
+                <p>Stock: <span id="stockStrawberry Lemonade">100</span></p>
+                <input type="number" id="restockStrawberry Lemonade" min="1" placeholder="Enter quantity">
+                <button onclick="restockItem('Strawberry Lemonade', 'stockStrawberry Lemonade')">Restock</button>
+            </div>
+            <div class="inventory-item">
+                <h3>SB Vanilla</h3>
+                <img src="Strawberry Vanilla.png" alt="Strawberry Vanilla Ice-Cream">
+                <p>Stock: <span id="stockStrawberry Vanilla">100</span></p>
+                <input type="number" id="restockStrawberry Vanilla" min="1" placeholder="Enter quantity">
+                <button onclick="restockItem('Strawberry Vanilla', 'stockStrawberry Vanilla')">Restock</button>
+            </div>
+            <div class="inventory-item">
+                <h3>Salted CRM</h3>
+                <img src="Salted Caramel.png" alt="Salted CRM Ice-Cream">
+                <p>Stock: <span id="stockSalted CRM">100</span></p>
+                <input type="number" id="restockSalted CRM" min="1" placeholder="Enter quantity">
+                <button onclick="restockItem('Salted CRM', 'stockSalted CRM')">Restock</button>
+            </div>
+            <div class="inventory-item">
+                <h3>Rocky Road</h3>
+                <img src="Rocky Road.png" alt="Rocky Road Ice-Cream">
+                <p>Stock: <span id="stockRocky Road">100</span></p>
+                <input type="number" id="restockRocky Road" min="1" placeholder="Enter quantity">
+                <button onclick="restockItem('Rocky Road', 'stockRocky Road')">Restock</button>
+            </div>
+            <div class="inventory-item">
+                <h3>CNC</h3>
+                <img src="Cookies N Cream.png" alt="Cookies N Cream Ice-Cream">
+                <p>Stock: <span id="stockCookies N Cream">100</span></p>
+                <input type="number" id="restockCookies N Cream" min="1" placeholder="Enter quantity">
+                <button onclick="restockItem('Cookies N Cream', 'stockCookies N Cream')">Restock</button>
+            </div>
+            <div class="inventory-item">
+                <h3>Moose TRK</h3>
+                <img src="Moose Tracks.png" alt="Moose TRK Ice-Cream">
+                <p>Stock: <span id="stockMoose TRK">100</span></p>
+                <input type="number" id="restockMoose TRK" min="1" placeholder="Enter quantity">
+                <button onclick="restockItem('Moose TRK', 'stockMoose TRK')">Restock</button>
+            </div>
+            <div class="inventory-item">
+                <h3>Pink BBG</h3>
+                <img src="Pink Bubblegum.png" alt="Pink BBG Ice-Cream">
+                <p>Stock: <span id="stockPink BBG">100</span></p>
+                <input type="number" id="restockPink BBG" min="1" placeholder="Enter quantity">
+                <button onclick="restockItem('Pink BBG', 'stockPink BBG')">Restock</button>
+            </div>
+            <div class="inventory-item">
+                <h3>BlueB SC</h3>
+                <img src="Blueberry Shortcake.png" alt="Blueberry Shortcake Ice-Cream">
+                <p>Stock: <span id="stockBlueberry Shortcake">100</span></p>
+                <input type="number" id="restockBlueberry Shortcake" min="1" placeholder="Enter quantity">
+                <button onclick="restockItem('Blueberry Shortcake', 'stockBlueberry Shortcake')">Restock</button>
+            </div>
+            <div class="inventory-item">
+                <h3>CTN Candy</h3>
+                <img src="Cotton Candy.png" alt="Cotton Candy Ice-Cream">
+                <p>Stock: <span id="stockCotton Candy">100</span></p>
+                <input type="number" id="restockCotton Candy" min="1" placeholder="Enter quantity">
+                <button onclick="restockItem('Cotton Candy', 'stockCotton Candy')">Restock</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="Billing Section.js"></script>
+
+</body>
+</html>
